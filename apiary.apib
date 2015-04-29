@@ -54,21 +54,44 @@ A Library object has the following attributes:
                     }
                 ]
 
-## Choice [/questions/{question_id}/choices/{choice_id}]
+## Occasion [/occasion/{startDate}/dates/{endDate}]
 
 + Parameters
-    + question_id (required, number, `1`) ... ID of the Question in form of an integer
-    + choice_id (required, number, `1`) ... ID of the Choice in form of an integer
+    + startDate (required, string, `"2015-12-04"`) ... start date of occasions
+    + endDate (required, string, `"2015-12-04"`) ... end dates for occasions
 
-### Vote on a Choice [POST]
+### Vote on a Choice [GET]
 
-This action allows you to vote on a question's choice.
+This action allows you to get the occasions between two dates.
 
 + Response 201
 
-    + Headers
-
-            Location: /questions/1
+              [
+                    {
+                      "id": 2,
+                      "url": "dsfgsdgsdfsdf sdf"
+                    },
+                    {
+                      "id": 2,
+                      "url": "dsfgsdgsdfsdf sdf"
+                    },
+                    {
+                      "id": 2,
+                      "url": "dsfgsdgsdfsdf sdf"
+                    },
+                     {
+                      "id": 2,
+                      "url": "dsfgsdgsdfsdf sdf"
+                    },
+                     {
+                      "id": 2,
+                      "url": "dsfgsdgsdfsdf sdf"
+                    },
+                     {
+                      "id": 2,
+                      "url": "dsfgsdgsdfsdf sdf"
+                    }
+                ]
 
 ## Questions Collection [/questions{?page}]
 
