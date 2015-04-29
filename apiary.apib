@@ -11,7 +11,7 @@ Khadamat app is a simple app.
 
 Resources related to library in the API.
 
-## Library [/library/{type}]
+## Library [/library/{type}/page/{page}/itemsPerPage/{itemsPerPage}]
 
 A Library object has the following attributes:
 
@@ -21,6 +21,8 @@ A Library object has the following attributes:
 
 + Parameters
     + type (required, string`) ... type of the library in form of a string --> "Friday, most or ramadan"
+    + page (required, int`) ... page of the library in form of a string --> 1, 2 ...
+    + itemsPerPage (required, int`) ... page of the library in form of a string --> 10, 20, ...
 
 ### View a Library Detail [GET]
 
@@ -30,26 +32,31 @@ A Library object has the following attributes:
                     {
                       "id": 2,
                       "title": "خطبة الجمعة ",
+                      "date": "2015-12-04",
                       "url": "dsfgsdgsdfsdf sdf"
                     },
                     {
                       "id": 2,
                       "title": "خطبة الجمعة ",
+                      "date": "2015-12-04",
                       "url": "dsfgsdgsdfsdf sdf"
                     },
                     {
                       "id": 2,
                       "title": "خطبة الجمعة ",
+                      "date": "2015-12-04",
                       "url": "dsfgsdgsdfsdf sdf"
                     },
                     {
                       "id": 2,
                       "title": "خطبة الجمعة ",
+                      "date": "2015-12-04",
                       "url": "dsfgsdgsdfsdf sdf"
                     },
                     {
                       "id": 2,
                       "title": "خطبة الجمعة ",
+                      "date": "2015-12-04",
                       "url": "dsfgsdgsdfsdf sdf"
                     }
                 ]
