@@ -3,70 +3,56 @@ HOST: http://polls.apiblueprint.org/
 
 # Khadamat Api
 
-Polls is a simple API allowing consumers to view polls and vote in them.
+Khadamat app is a simple app.
 
-# Polls API Root [/]
+ 
 
-This resource does not have any attributes. Instead it offers the initial
-API affordances in the form of the links in the JSON body.
+## Group Library
 
-It is recommend to follow the “url” link values,
-[Link](https://tools.ietf.org/html/rfc5988) or Location headers where
-applicable to retrieve resources. Instead of constructing your own URLs,
-to keep your client decoupled from implementation details.
+Resources related to library in the API.
 
-## Retrieve the Entry Point [GET]
+## Library [/library/{type}]
 
-+ Response 200 (application/json)
+A Library object has the following attributes:
 
-        {
-            "questions_url": "/questions"
-        }
-
-## Group Question
-
-Resources related to questions in the API.
-
-## Question [/questions/{question_id}]
-
-A Question object has the following attributes:
-
-+ question
-+ published_at - An ISO8601 date when the question was published.
++ id
++ title
 + url
-+ choices - An array of Choice objects.
 
 + Parameters
-    + question_id (required, number, `1`) ... ID of the Question in form of an integer
+    + type (required, string`) ... type of the library in form of a string --> "Friday, most or ramadan"
 
-### View a Questions Detail [GET]
+### View a Library Detail [GET]
 
 + Response 200 (application/json)
 
-                {
-                    "question": "Favourite programming language?",
-                    "published_at": "2014-11-11T08:40:51.620Z",
-                    "url": "/questions/1",
-                    "choices": [
-                        {
-                            "choice": "Swift",
-                            "url": "/questions/1/choices/1",
-                            "votes": 2048
-                        }, {
-                            "choice": "Python",
-                            "url": "/questions/1/choices/2",
-                            "votes": 1024
-                        }, {
-                            "choice": "Objective-C",
-                            "url": "/questions/1/choices/3",
-                            "votes": 512
-                        }, {
-                            "choice": "Ruby",
-                            "url": "/questions/1/choices/4",
-                            "votes": 256
-                        }
-                    ]
-                }
+                [
+                    {
+                      "id": 2,
+                      "title": "خطبة الجمعة ",
+                      "url": "dsfgsdgsdfsdf sdf"
+                    },
+                    {
+                      "id": 2,
+                      "title": "خطبة الجمعة ",
+                      "url": "dsfgsdgsdfsdf sdf"
+                    },
+                    {
+                      "id": 2,
+                      "title": "خطبة الجمعة ",
+                      "url": "dsfgsdgsdfsdf sdf"
+                    },
+                    {
+                      "id": 2,
+                      "title": "خطبة الجمعة ",
+                      "url": "dsfgsdgsdfsdf sdf"
+                    },
+                    {
+                      "id": 2,
+                      "title": "خطبة الجمعة ",
+                      "url": "dsfgsdgsdfsdf sdf"
+                    }
+                ]
 
 ## Choice [/questions/{question_id}/choices/{choice_id}]
 
