@@ -100,10 +100,11 @@ This action allows you to get the occasions between two dates.
                     }
                 ]
 
-## News Collection [/news/{date}]
+## News Collection [/news/page/{pageN}/itemsPerPage/{itemsPerPage}]
 
 + Parameters
-    + date (required, string, `"2015-12-04"`) ... The date of news list
+     + page (required, int`) ... page of the library in form of a string --> 1, 2 ...
+    + itemsPerPage (required, int`) ... page of the library in form of a string --> 10, 20, ...
 
 ### List All News [GET]
 
@@ -111,7 +112,7 @@ This action allows you to get the occasions between two dates.
 
     + Headers
 
-            Link: </news/2015-12-04>; rel="next"
+            Link: </news/page/1/itemsPerPage/10>; rel="next"
 
     + Body
 
