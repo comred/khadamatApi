@@ -9,7 +9,7 @@ Khadamat app is a simple app.
 
 ## Group Init
 
-Resources related to library in the API.
+Resources related to init in the API.
 
 ## init [/init]
 
@@ -36,6 +36,28 @@ A init object has the following attributes:
             }
             
           }
+        }
+        
+## Group Descriptions
+
+Resources related to description in the API.
+
+## descriptions [/modereyet/desc/{type}]
+
+A description object has the following attributes:
+
++ type
+
++ Parameters
+    + type (required, string`) ... type of the descriptions in form of a string --> "re3aya, sadakat, takafol"
+
+### View a description Detail [GET]
+
++ Response 200 (application/json)
+
+        {
+          "title": "title",
+          "details": "detais"
         }
 
 ## Group Library
