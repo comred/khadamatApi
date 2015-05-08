@@ -202,8 +202,8 @@ This action allows you to get the occasions between two dates.
 ## News Collection [/news/page/{page}/itemsPerPage/{itemsPerPage}]
 
 + Parameters
-    + page (required, int`) ... page of the library in form of a string --> 1, 2 ...
-    + itemsPerPage (required, int`) ... page of the library in form of a string --> 10, 20, ...
+    + page (required, int`) ... page of the library in form of a int --> 1, 2 ...
+    + itemsPerPage (required, int`) ... n items of the library in form of a int --> 10, 20, ...
 
 ### List All News [GET]
 
@@ -277,4 +277,77 @@ allow to ebsom bel 5eir
           "message": "",
           "data": null
         }
+        
+        
+# Group Aytam
+allow get the aytam list
+
+## aytam list [/aytam/list/page/{page}/itemsPerPage/{itemsPerPage}]
+
++ Parameters
+    + page (required, int`) ... page of the aytam in form of a int --> 1, 2 ...
+    + itemsPerPage (required, int`) ... n items of the aytam in form of a int --> 10, 20, ...
+
+### Aytam list [POST]
+
++ Response 200 (application/json)
+
+        [
+          {
+            "id": 2,
+            "name": "ali",
+            "age": 15,
+            "details": "dsdsdsdsdd",
+            "url": "http://fc07.deviantart.net/fs71/f/2012/327/9/d/kid_stock_by_gooooman-d5lvqm7.jpg"
+          },
+          {
+            "id": 3,
+            "name": "ali",
+            "age": 15,
+            "details": "dsdsdsdsdd",
+            "url": "http://fc07.deviantart.net/fs71/f/2012/327/9/d/kid_stock_by_gooooman-d5lvqm7.jpg"
+          },
+          {
+            "id": 4,
+            "name": "ali",
+            "age": 15,
+            "details": "dsdsdsdsdd",
+            "url": "http://fc07.deviantart.net/fs71/f/2012/327/9/d/kid_stock_by_gooooman-d5lvqm7.jpg"
+          },
+          {
+            "id": 5,
+            "name": "ali",
+            "age": 15,
+            "details": "dsdsdsdsdd",
+            "url": "http://fc07.deviantart.net/fs71/f/2012/327/9/d/kid_stock_by_gooooman-d5lvqm7.jpg"
+          },
+          {
+            "id": 6,
+            "name": "ali",
+            "age": 15,
+            "details": "dsdsdsdsdd",
+            "url": "http://fc07.deviantart.net/fs71/f/2012/327/9/d/kid_stock_by_gooooman-d5lvqm7.jpg"
+          },
+          {
+            "id": 7,
+            "name": "ali",
+            "age": 15,
+            "details": "dsdsdsdsdd",
+            "url": "http://fc07.deviantart.net/fs71/f/2012/327/9/d/kid_stock_by_gooooman-d5lvqm7.jpg"
+          },
+          {
+            "id": 8,
+            "name": "ali",
+            "age": 15,
+            "details": "dsdsdsdsdd",
+            "url": "http://fc07.deviantart.net/fs71/f/2012/327/9/d/kid_stock_by_gooooman-d5lvqm7.jpg"
+          },
+          {
+            "id": 9,
+            "name": "ali",
+            "age": 15,
+            "details": "dsdsdsdsdd",
+            "url": "http://fc07.deviantart.net/fs71/f/2012/327/9/d/kid_stock_by_gooooman-d5lvqm7.jpg"
+          }
+        ]
 
