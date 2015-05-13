@@ -350,3 +350,34 @@ allow get the aytam list
           }
         ]
 
+
+# Group ResponserShip
+allow to send the data of a responser ship
+
+## basmet 5eir [/responsership]
+### ResponserShip [POST]
++ Request (application/json)
+
+        {
+          "name": "etst",
+          "phoneNumber": "45215452",
+          "phoneCode": "00961",
+          "kimatKafala": 452645,
+          "kafalaPeriod": 25,
+          "tasdidKafala": "yearly",
+          "maleyetkafala": "sadakat",
+          "typeKafala": "معوق",
+          "size": 5,
+          "yatimId" : 0 // if zero so the typeKafala is not "يتيم"
+        }
+
++ Response 200 (application/json)
+
+        {
+          "success": true,
+          "error": 0,
+          "message": "",
+          "data": null
+        }
+        
+        
