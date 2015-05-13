@@ -136,15 +136,14 @@ A Library object has the following attributes:
                     }
                 ]
 
-## Occasion [/occasion/{todayDate}/itemsPerPage/{itemsPerPage}]
+## Occasion [/occasion/itemsPerPage/{itemsPerPage}]
 
 + Parameters
-    + todayDate (required, string, `"2015-12-04"`) ... start date of occasions
     + itemsPerPage (required, int`) ... number of items in the page in an integer form --> 10, 20, ...
 
 ### Get the occasion list [GET]
 
-This action allows you to get the occasions between two dates.
+This action allows you to get the occasions after the current date.
 
 + Response 201
 
