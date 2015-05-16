@@ -20,81 +20,55 @@ A init object has the following attributes:
 + Response 200 (application/json)
 
         {
-          "descriptions":[
-            
-            {
-              "title": "title",
-              "type": "takafol",
-              "details": "detais"
+            "takafolDesc":{
+                "title": "title",
+                "details": "details",
+                "types": "types details"
             },
-            {
-              "title": "title",
-              "type": "re3aya",
-              "details":"details"
+            "re3ayaDesc":{
+                "title": "title",
+                "details":"details"
             },
-            {
-              "title": "title",
-              "type": "sadakat",
-              "details":"details"
+            "sadakatDesc":{
+                "title": "title",
+                "details":"details"
+            },
+            "kijat5ayreyen":{
+                "how": "text",
+                "contactUs": "text",
+                "mawared": "text"
+            },
+            "kijatReznama":{
+                "how": "text",
+                "contactUs": "text",
+                "mawared": "text"
+            },
+            "sandouk":{
+                "how": "text",
+                "contactUs": "text",
+                "mawared": "text"
+            },
+            "halat":{
+                "year": 2015,
+                "nAytam": 452,
+                "nFo2ara": 456,
+                "n3ajaza": 8946,
+                "nMo3awaken": 851
+            },
+            "takdimat":{
+                "year": 2015,
+                "mose3adet_nakdeye": 4528562,
+                "mawed_8eze2eye_7osas": 945241,
+                "mose3adet_so7eye": 7843,
+                "it3am_iftarat":3245,
+                "ada7e_lo7omat": 6215,
+                "mose3adet_3edeyet_aytam": 6122,
+                "keswet_3ed_aytem": 6125,
+                "zaket_fotra": 1564,
+                "total": 6311
             }
-          ],
-          "kijat5ayreyen":{
-            "how": "text",
-            "contactUs": "text",
-            "mawared": "text"
-          },
-          "kijatReznama":{
-            "how": "text",
-            "contactUs": "text",
-            "mawared": "text"
-          },
-          "sandouk":{
-            "how": "text",
-            "contactUs": "text",
-            "mawared": "text"
-          },
-          "halat":{
-            "year": 2015,
-            "nAytam": 452,
-            "nFo2ara": 456,
-            "n3ajaza": 8946,
-            "nMo3awaken": 851
-          },
-          "takdimat":{
-            "year": 2015,
-            "mose3adet_nakdeye": 4528562,
-            "mawed_8eze2eye_7osas": 945241,
-            "mose3adet_so7eye": 7843,
-            "it3am_iftarat":3245,
-            "ada7e_lo7omat": 6215,
-            "mose3adet_3edeyet_aytam": 6122,
-            "keswet_3ed_aytem": 6125,
-            "zaket_fotra": 1564,
-            "total": 6311
-          }
         }
         
-## Group Descriptions
-
-Resources related to description in the API.
-
-## descriptions [/modereyet/desc/{type}]
-
-A description object has the following attributes:
-
-+ type
-
-+ Parameters
-    + type (required, string`) ... type of the descriptions in form of a string --> "re3aya, sadakat, takafol"
-
-### View a description Detail [GET]
-
-+ Response 200 (application/json)
-
-        {
-          "title": "title",
-          "details": "detais"
-        }
 
 ## Group Library
 
