@@ -271,15 +271,16 @@ This action allows you to get the occasions after the current date.
 allow to ebsom bel 5eir
 
 ## basmet 5eir [/basmet/5eir]
-### Login [POST]
+### Basmet 5eir [POST]
 + Request (application/json)
 
         {
-          "name": "jaafrrrr",
-          "phone": "5498132",
-          "code": "961",
-          "helpType": "Madeye" ,
-          "profitWho": "ايتام "
+            "caseId": 1, \\ 0 is random case.
+            "name": "jaafrrrr",
+            "phone": "5498132",
+            "code": "961",
+            "helpType": "Madeye" ,
+            "profitWho": "ايتام "
         }
 
 + Response 200 (application/json)
@@ -368,7 +369,7 @@ allow get the aytam list
 # Group ResponserShip
 allow to send the data of a responser ship
 
-## basmet 5eir [/responsership]
+## ResponserShip [/responsership]
 ### ResponserShip [POST]
 + Request (application/json)
 
