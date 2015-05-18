@@ -394,7 +394,12 @@ allow receive the data for the social cases
 # Group Library Count
 allows the addition of the count concerning the library file
 
-## library counter [/library/addToCount]
+## library counter [/library/addToCount/{fileId}]
+
++ Parameters
+    + fileId (required, int`) ... id of the file that was downloaded or listened to --> 1, 2 ...
+
+
 ### LibraryAdd [GET]
 
 + Response 200 (application/json)
