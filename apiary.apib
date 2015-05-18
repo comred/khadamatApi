@@ -368,6 +368,7 @@ allow to send the data of a responser ship
           "message": "",
           "data": null
         }
+      
         
 # Group Social Case
 allow receive the data for the social cases
@@ -388,5 +389,22 @@ allow receive the data for the social cases
             "http://www.aihcp.org/blog/wp-content/uploads/2012/07/shutterstock_32557234.jpg"
             ]
         }
+        
+        
+# Group Library Count
+allows the addition of the count concerning the library file
+
+## library counter [/library/addToCount]
+### LibraryAdd [GET]
+
++ Response 200 (application/json)
+
+        {
+          "success": true,
+          "error": 0,
+          "message": "",
+          "data": null
+        }
+      
         
         
