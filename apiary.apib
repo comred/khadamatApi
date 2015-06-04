@@ -465,6 +465,32 @@ allows the addition of the count concerning the library file
           "message": "",
           "data": null
         }
+        
+        
+## tokenRegister [/tokenRegister]
+### Registering the device token [POST]
+
+                 
++ Request (application/json)
+
+            {   "deviceToken": "123456ergerg", 
+                "deviceType": "android"}
+
++ Response 202 (application/json)
+
+    + Headers
+
+            Location: api/tokenRegister
+
+    + Body
+
+            {
+                "success": true,
+                "error": 0,
+                "message": "",
+                "data": ""
+            }
+
       
         
         
