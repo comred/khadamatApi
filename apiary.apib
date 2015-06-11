@@ -301,6 +301,14 @@ allow to ebsom bel 5eir
 
 ## basmet 5eir [/basmet/5eir]
 ### Basmet 5eir [POST]
+
+1    ايتام
+2    فقراء
+3    معوقين
+4    عجزة
+------------------
+1    مساعدة ماديّة
+2    مساعدة عينيّة
 + Request (application/json)
 
         {
@@ -308,8 +316,8 @@ allow to ebsom bel 5eir
             "name": "jaafrrrr",
             "phone": "5498132",
             "code": "961",
-            "helpType": "Madeye" ,
-            "profitWho": "ايتام "
+            "helpType": 1,
+            "profitWho": 1
         }
 
 + Response 200 (application/json)
